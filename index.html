@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boston Housing Price Prediction</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f9f9f9;
+            padding: 20px;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            margin-top: 15px;
+            padding: 8px;
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/predict" method="post">
+        <h2>Price Prediction</h2>
+        <label>CRIM:<input type="text" name="CRIM"></label>
+        <label>ZN:<input type="text" name="ZN"></label>
+        <label>INDUS:<input type="text" name="INDUS"></label>
+        <label>CHAS:<input type="text" name="CHAS"></label>
+        <label>NOX:<input type="text" name="NOX"></label>
+        <label>RM:<input type="text" name="RM"></label>
+        <label>AGE:<input type="text" name="AGE"></label>
+        <label>DIS:<input type="text" name="DIS"></label>
+        <label>RAD:<input type="text" name="RAD"></label>
+        <label>TAX:<input type="text" name="TAX"></label>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
